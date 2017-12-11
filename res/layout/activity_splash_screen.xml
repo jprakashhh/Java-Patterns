@@ -1,0 +1,70 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/pure"
+    tools:context=".SplashScreen">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/java2"
+        android:layout_centerHorizontal="true"/>
+    <View
+        android:id="@+id/center"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/text_view_splash_things"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/center"
+        android:layout_centerHorizontal="true"
+        android:text="@string/text_splash_things"
+        android:fontFamily="cursive"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_size_splash_things"/>
+
+    <TextView
+        android:id="@+id/text_view_splash_dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/text_view_splash_do"
+        android:layout_toLeftOf="@+id/text_view_splash_do"
+        android:text="@string/text_splash_dot"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/braces"
+        android:textSize="@dimen/text_size_splash_do"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:fontFamily="serif-monospace"
+        android:id="@+id/text_view_splash_do"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/text_view_splash_things"
+        android:layout_below="@+id/text_view_splash_things"
+        android:text="@string/text_splash_do"
+        android:textColor="@color/splash_do"
+        android:textSize="@dimen/text_size_splash_do"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/text_splash_studio"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_size_splash_studio"/>
+
+</RelativeLayout>
